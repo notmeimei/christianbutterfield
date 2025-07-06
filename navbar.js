@@ -8,4 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
       <button onclick="window.location.href='https://www.instagram.com/cmilanb/?hl=en'">Instagram</button>
     `;
   }
+  
+  const headerTitle = document.querySelector('header h1');
+  if (headerTitle && headerTitle.textContent.trim()) {
+    const text = headerTitle.textContent.trim();
+    headerTitle.innerHTML = `<a href="index.html">${text}</a>`;
+  }
 });
