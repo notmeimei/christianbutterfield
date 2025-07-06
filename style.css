@@ -132,7 +132,7 @@ h2 {
 
 @media (max-width: 900px) {
   .freeform-gallery {
-    min-height: 12800px;
+    min-height: 15000px;
   }
   .gallery-img {
     position: static !important;
@@ -151,7 +151,7 @@ h2 {
 
 @media (max-width: 600px) {
   .freeform-gallery {
-    min-height: 3900px;
+    min-height: 4600px;
     padding: 2rem 0;
   }
   .gallery-img {
