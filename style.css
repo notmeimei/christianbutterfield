@@ -6,6 +6,11 @@ body {
   color: #222;
 }
 
+/* Apply drop shadow to all images */
+img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -110,7 +115,8 @@ h2 {
   background: #eaeaea;
   object-fit: cover;
   height: auto;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.11);
+  /* Light gray drop shadow with vertical offset and 20px blur */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s, box-shadow 0.2s;
   background-clip: padding-box;
   border: 1px solid #ececec;
@@ -140,7 +146,8 @@ h2 {
 
 .gallery-img:hover {
   transform: scale(1.04);
-  box-shadow: 0 8px 36px rgba(0,0,0,0.17);
+  /* Maintain vertical-only shadow on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
   z-index: 3;
 }
 
