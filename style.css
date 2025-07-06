@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem 1rem 1rem;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -35,6 +35,17 @@ header h1 {
   letter-spacing: 2px;
   margin: 0;
   font-style: normal;
+    line-height: 1;
+}
+
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Tagline remains Playfair Display italic serif */
@@ -55,6 +66,7 @@ nav button {
   margin-left: 0.5rem;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
+  line-height: 1;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
@@ -68,7 +80,7 @@ nav button:hover {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 2rem auto;
   padding: 120px 1rem 0 1rem;
 }
