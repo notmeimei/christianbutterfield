@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function layoutImages() {
     if (window.innerWidth <= 900) return;
-    const gap = 180; // increased space between images
-    const offsetRange = gap * 0.4; // scatter range for each image
+    const verticalGap = 200; // ensure at least 200px vertical space
+    const baseHorizontalGap = 180;
+    const offsetRange = baseHorizontalGap * 0.4; // scatter range for each image
     const galleryWidth = gallery.clientWidth;
 
     // Build rows first so each row can be centered
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     images.forEach(img => {
       const width = img.offsetWidth;
       const height = img.offsetHeight;
-      const extra = current.length ? gap : 0;
+      const extra = current.length ? baseHorizontalGap : 0;
 
       if (rowWidth + extra + width > galleryWidth && current.length) {
         rows.push({ imgs: current, width: rowWidth, height: rowHeight });
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         rowHeight = 0;
       }
       
-      if (rowWidth > 0) rowWidth += gap;
+      if (rowWidth > 0) rowWidth += baseHorizontalGap;
       rowWidth += width;
       rowHeight = Math.max(rowHeight, height);
       current.push(img);
@@ -45,15 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const offsetY = (Math.random() - 0.5) * 2 * offsetRange;
         img.style.left = (x + offsetX) + 'px';
         img.style.top = (y + offsetY) + 'px';
-        x += img.offsetWidth + gap;
+        x += img.offsetWidth + baseHorizontalGap + Math.random() * baseHorizontalGap;
       });
-      y += row.height + gap;
-      const offsetX = (Math.random() - 0.5) * 2 * offsetRange;
-      const offsetY = (Math.random() - 0.5) * 2 * offsetRange;
-      img.style.left = (x + offsetX) + 'px';
-      img.style.top = (y + offsetY) + 'px';
-      x += width + gap;
-      rowHeight = Math.max(rowHeight, height);
+      y += row.height + verticalGap;
     });
 
     gallery.style.minHeight = y + 'px';
