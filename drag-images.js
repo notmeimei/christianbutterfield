@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function layoutImages() {
     if (window.innerWidth <= 900) return;
     const gap = 50; // space between images
+    const offsetRange = gap / 2; // maximum random offset
     let x = 0;
     let y = 0;
     let rowHeight = 0;
@@ -19,8 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         y += rowHeight + gap;
         rowHeight = 0;
       }
-      img.style.left = x + 'px';
-      img.style.top = y + 'px';
+      const offsetX = (Math.random() - 0.5) * 2 * offsetRange;
+      const offsetY = (Math.random() - 0.5) * 2 * offsetRange;
+      img.style.left = (x + offsetX) + 'px';
+      img.style.top = (y + offsetY) + 'px';
       x += width + gap;
       rowHeight = Math.max(rowHeight, height);
     });
