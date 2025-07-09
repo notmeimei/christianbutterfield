@@ -1,7 +1,7 @@
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 200px;
   background: #fafafa;
   color: #222;
 }
@@ -19,7 +19,7 @@ header {
   background: transparent;
   z-index: 1000;
   box-shadow: none;
-  padding: 0;
+  padding: 0 200px;
   width: 100%;
   pointer-events: auto;
 }
@@ -87,7 +87,7 @@ nav button:hover {
 main {
   max-width: 1600px;
   margin: 2rem auto;
-  padding: 120px 1rem 0 1rem;
+  padding: 120px 0 0 0;
 }
 
 section {
@@ -138,6 +138,12 @@ h2 {
 }
 
 @media (max-width: 900px) {
+  body {
+    padding: 0 1rem;
+  }
+  header {
+    padding: 0 1rem;
+  }
   .freeform-gallery {
     min-height: 15000px;
   }
@@ -157,6 +163,12 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    body {
+    padding: 0 0.5rem;
+  }
+  header {
+    padding: 0 0.5rem;
+  }
   .freeform-gallery {
     min-height: 4600px;
     padding: 2rem 0;
