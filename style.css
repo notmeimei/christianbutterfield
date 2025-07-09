@@ -33,9 +33,9 @@ header {
   margin: 0 auto;
 }
 
-/* Only the user's name uses Just Me Again Down Here */
+/* Title uses the Adobe Fonts family loaded via the kit */
 header h1 {
-  font-family: 'Just Me Again Down Here', cursive;
+  font-family: 'p22-flw-midway', regular;
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin: 0;
