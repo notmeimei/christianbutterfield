@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function layoutImages() {
     if (window.innerWidth <= 900) return;
-    const verticalGap = 200; // ensure at least 200px vertical space
-    const baseHorizontalGap = 180;
-    const offsetRange = baseHorizontalGap * 0.4; // scatter range for each image
+    const verticalGap = 400; // ensure at least 200px vertical space
+    const baseHorizontalGap = 150;
+    const offsetRange = baseHorizontalGap * 1; // scatter range for each image
     const galleryWidth = gallery.clientWidth;
 
     // Build rows first so each row can be centered
