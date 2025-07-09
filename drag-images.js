@@ -5,21 +5,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function layoutImages() {
     if (window.innerWidth <= 900) return;
-    const gap = 50; // space between images
-    const offsetRange = gap / 2; // maximum random offset
-    let x = 0;
-    let y = 0;
-    let rowHeight = 0;
+    const gap = 180; // increased space between images
+    const offsetRange = gap * 0.4; // scatter range for each image
     const galleryWidth = gallery.clientWidth;
+
+    // Build rows first so each row can be centered
+    const rows = [];
+    let current = [];
+    let rowWidth = 0;
+    let rowHeight = 0;
 
     images.forEach(img => {
       const width = img.offsetWidth;
       const height = img.offsetHeight;
-      if (x + width > galleryWidth) {
-        x = 0;
-        y += rowHeight + gap;
+      const extra = current.length ? gap : 0;
+
+      if (rowWidth + extra + width > galleryWidth && current.length) {
+        rows.push({ imgs: current, width: rowWidth, height: rowHeight });
+        current = [];
+        rowWidth = 0;
         rowHeight = 0;
       }
+      
+      if (rowWidth > 0) rowWidth += gap;
+      rowWidth += width;
+      rowHeight = Math.max(rowHeight, height);
+      current.push(img);
+    });
+
+    if (current.length) {
+      rows.push({ imgs: current, width: rowWidth, height: rowHeight });
+    }
+
+    let y = 0;
+    rows.forEach(row => {
+      let x = (galleryWidth - row.width) / 2;
+      row.imgs.forEach(img => {
+        const offsetX = (Math.random() - 0.5) * 2 * offsetRange;
+        const offsetY = (Math.random() - 0.5) * 2 * offsetRange;
+        img.style.left = (x + offsetX) + 'px';
+        img.style.top = (y + offsetY) + 'px';
+        x += img.offsetWidth + gap;
+      });
+      y += row.height + gap;
       const offsetX = (Math.random() - 0.5) * 2 * offsetRange;
       const offsetY = (Math.random() - 0.5) * 2 * offsetRange;
       img.style.left = (x + offsetX) + 'px';
@@ -28,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
       rowHeight = Math.max(rowHeight, height);
     });
 
-    gallery.style.minHeight = (y + rowHeight) + 'px';
+    gallery.style.minHeight = y + 'px';
   }
 
   // Layout once images have loaded
