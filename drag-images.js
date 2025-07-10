@@ -1,20 +1,20 @@
 // Make all images in .freeform-gallery draggable with the mouse (desktop only)
 document.addEventListener('DOMContentLoaded', function () {
   const gallery = document.getElementById('freeform-gallery');
-  const images = Array.from(gallery.querySelectorAll('.gallery-img'));
+  const items = Array.from(gallery.querySelectorAll('.gallery-item'));
 
   function layoutImages() {
     if (window.innerWidth <= 900) return;
     
     let maxBottom = 0;
-    images.forEach(img => {
-      const l = img.dataset.left;
-      const t = img.dataset.top;
-      if (l !== undefined) img.style.left = (/px$/.test(l) ? l : l + 'px');
-      if (t !== undefined) img.style.top = (/px$/.test(t) ? t : t + 'px');
+    items.forEach(item => {
+      const l = item.dataset.left;
+      const t = item.dataset.top;
+      if (l !== undefined) item.style.left = (/px$/.test(l) ? l : l + 'px');
+      if (t !== undefined) item.style.top = (/px$/.test(t) ? t : t + 'px');
 
-      const topNum = parseFloat(img.style.top) || 0;
-      const bottom = topNum + img.offsetHeight;
+      const topNum = parseFloat(item.style.top) || 0;
+      const bottom = topNum + item.offsetHeight;
       if (bottom > maxBottom) maxBottom = bottom;
     });
 
@@ -27,30 +27,30 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('load', layoutImages);
   window.addEventListener('resize', layoutImages);
 
-  images.forEach(img => {
+  items.forEach(item => {
     let offsetX = 0, offsetY = 0, startX = 0, startY = 0, dragging = false;
 
-    img.addEventListener('mousedown', function (e) {
+    item.addEventListener('mousedown', function (e) {
       // Only allow drag if not on mobile layout
       if (window.innerWidth <= 900) return;
       dragging = true;
-      img.style.zIndex = 999;
+      item.style.zIndex = 999;
       startX = e.clientX;
       startY = e.clientY;
       // Get current top/left in px
-      const computed = window.getComputedStyle(img);
+      const computed = window.getComputedStyle(item);
       offsetX = startX - parseFloat(computed.left);
       offsetY = startY - parseFloat(computed.top);
 
       function onMouseMove(e) {
         if (!dragging) return;
-        img.style.left = (e.clientX - offsetX) + 'px';
-        img.style.top = (e.clientY - offsetY) + 'px';
+        item.style.left = (e.clientX - offsetX) + 'px';
+        item.style.top = (e.clientY - offsetY) + 'px';
       }
 
       function onMouseUp() {
         dragging = false;
-        img.style.zIndex = '';
+        item.style.zIndex = '';
         document.removeEventListener('mousemove', onMouseMove);
         document.removeEventListener('mouseup', onMouseUp);
       }
@@ -60,6 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Prevent default drag image
-    img.addEventListener('dragstart', e => e.preventDefault());
+    item.addEventListener('dragstart', e => e.preventDefault());
   });
 });
