@@ -117,25 +117,40 @@ h2 {
   height: auto;
   /* Light gray drop shadow with vertical offset and 20px blur */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: box-shadow 0.2s;
   background-clip: padding-box;
   border: 1px solid #ececec;
   cursor: grab;
   user-select: none;
 }
 
+.gallery-img::after {
+  content: attr(alt);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 4px;
+  padding: 2px 4px;
+  font-size: 0.8rem;
+  color: #222;
+  background: #fafafa;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.gallery-img:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 .gallery-img:active {
   cursor: grabbing;
 }
 
-.gallery-img:hover {
-  transform: scale(1.04);
-  /* Maintain vertical-only shadow on hover */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-}
+
 
 @media (max-width: 900px) {
   body {
