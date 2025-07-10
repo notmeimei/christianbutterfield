@@ -30,8 +30,8 @@ header {
 
 .header-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem 1rem 1rem;
   max-width: 1200px;
@@ -57,7 +57,8 @@ header h1 a {
 header nav {
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-top: 0;
 }
 
 /* Tagline remains Playfair Display italic serif */
@@ -167,6 +168,14 @@ h2 {
   header {
     padding: 0 1rem;
   }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
   .freeform-gallery {
     min-height: 15000px;
   }
@@ -191,6 +200,14 @@ h2 {
   }
   header {
     padding: 0 0.5rem;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
   .freeform-gallery {
     min-height: 4600px;
