@@ -5,53 +5,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function layoutImages() {
     if (window.innerWidth <= 900) return;
-    const verticalGap = 400; // ensure at least 200px vertical space
-    const baseHorizontalGap = 150;
-    const offsetRange = baseHorizontalGap * 1; // scatter range for each image
-    const galleryWidth = gallery.clientWidth;
-
-    // Build rows first so each row can be centered
-    const rows = [];
-    let current = [];
-    let rowWidth = 0;
-    let rowHeight = 0;
-
+    
+    let maxBottom = 0;
     images.forEach(img => {
-      const width = img.offsetWidth;
-      const height = img.offsetHeight;
-      const extra = current.length ? baseHorizontalGap : 0;
+      const l = img.dataset.left;
+      const t = img.dataset.top;
+      if (l !== undefined) img.style.left = (/px$/.test(l) ? l : l + 'px');
+      if (t !== undefined) img.style.top = (/px$/.test(t) ? t : t + 'px');
 
-      if (rowWidth + extra + width > galleryWidth && current.length) {
-        rows.push({ imgs: current, width: rowWidth, height: rowHeight });
-        current = [];
-        rowWidth = 0;
-        rowHeight = 0;
-      }
-      
-      if (rowWidth > 0) rowWidth += baseHorizontalGap;
-      rowWidth += width;
-      rowHeight = Math.max(rowHeight, height);
-      current.push(img);
+      const topNum = parseFloat(img.style.top) || 0;
+      const bottom = topNum + img.offsetHeight;
+      if (bottom > maxBottom) maxBottom = bottom;
     });
 
-    if (current.length) {
-      rows.push({ imgs: current, width: rowWidth, height: rowHeight });
+      if (maxBottom > 0) {
+      gallery.style.minHeight = (maxBottom + 200) + 'px';
     }
-
-    let y = 0;
-    rows.forEach(row => {
-      let x = (galleryWidth - row.width) / 2;
-      row.imgs.forEach(img => {
-        const offsetX = (Math.random() - 0.5) * 2 * offsetRange;
-        const offsetY = (Math.random() - 0.5) * 2 * offsetRange;
-        img.style.left = (x + offsetX) + 'px';
-        img.style.top = (y + offsetY) + 'px';
-        x += img.offsetWidth + baseHorizontalGap + Math.random() * baseHorizontalGap;
-      });
-      y += row.height + verticalGap;
-    });
-
-    gallery.style.minHeight = y + 'px';
   }
 
   // Layout once images have loaded
