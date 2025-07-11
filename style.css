@@ -115,7 +115,7 @@ h2 {
   padding: 0;
 }
 
-.gallery-img {
+.gallery-item {
   position: absolute;
   background: #eaeaea;
   object-fit: cover;
@@ -130,8 +130,8 @@ h2 {
 }
 
 
-.gallery-img::after {
-  content: attr(data-caption);
+
+.gallery-item .caption {
   position: absolute;
   left: 0;
   top: 100%;
@@ -149,13 +149,12 @@ h2 {
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
-.gallery-img:hover::after {
+.gallery-item:hover .caption {
   opacity: 1;
   transform: translateY(0);
 }
 
-
-.gallery-img:active {
+.gallery-item:active {
   cursor: grabbing;
 }
 
@@ -179,7 +178,7 @@ h2 {
   .freeform-gallery {
     min-height: 15000px;
   }
-  .gallery-img {
+  .gallery-item {
     position: static !important;
     display: block;
     margin: 4rem auto;
@@ -213,7 +212,7 @@ h2 {
     min-height: 4600px;
     padding: 2rem 0;
   }
-  .gallery-img {
+  .gallery-item {
     position: static !important;
     display: block;
     margin: 4rem auto;
