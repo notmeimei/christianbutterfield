@@ -84,5 +84,11 @@
   </footer>
   <script src="navbar.js"></script>
   <script src="drag-images.js"></script>
+  <script>
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+  </script>
 </body>
 </html>
