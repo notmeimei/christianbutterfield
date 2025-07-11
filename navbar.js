@@ -4,7 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
     nav.innerHTML = `
       <button onclick="window.location.href='cv.html'">CV</button>
       <button onclick="window.location.href='exhibitions.html'">Exhibitions</button>
-      <button onclick="window.location.href='https://www.instagram.com/cmilanb/?hl=en'">Instagram</button>
+      <div class="dropdown">
+        <button class="dropbtn">Contact</button>
+        <div class="dropdown-content">
+          <a href="https://www.instagram.com/cmilanb/?hl=en">Instagram</a>
+          <a href="mailto:your.email@example.com">Email</a>
+          <a href="index.html#gallery">Gallery</a>
+        </div>
+      </div>
     `;
   }
   
