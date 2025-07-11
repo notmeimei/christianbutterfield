@@ -13,7 +13,7 @@ body {
 /* Apply drop shadow to all images */
 img {
   /* Bottom only drop shadow */
-  box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 25px -10px rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -121,7 +121,7 @@ h2 {
   object-fit: cover;
   height: auto;
   /* Bottom only drop shadow */
-  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s;
   background-clip: padding-box;
   border: 1px solid #ececec;
@@ -205,6 +205,15 @@ h2 {
     height: auto !important;
     display: block;
   }
+  .gallery-item .caption {
+    position: static;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    color: #777;
+  }
   main {
     padding: 160px 1rem 0 1rem;
   }
@@ -246,6 +255,15 @@ h2 {
     width: 100% !important;
     height: auto !important;
     display: block;
+  }
+  .gallery-item .caption {
+    position: static;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    color: #777;
   }
   main {
     padding: 130px 0.5rem 0 0.5rem;
