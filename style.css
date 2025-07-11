@@ -164,6 +164,13 @@ h2 {
   user-select: none;
 }
 
+/*
+  Ensure the image fills the container without leaving a gap at the
+  bottom so the drop shadow sits flush against the artwork.
+*/
+.gallery-item img {
+  display: block;
+}
 
 
 .gallery-item .caption {
