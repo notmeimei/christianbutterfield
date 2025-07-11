@@ -12,7 +12,8 @@ body {
 
 /* Apply drop shadow to all images */
 img {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  /* Bottom only drop shadow */
+  box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -119,8 +120,8 @@ h2 {
   background: #eaeaea;
   object-fit: cover;
   height: auto;
-  /* Light gray drop shadow with vertical offset and 20px blur */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  /* Bottom only drop shadow */
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s;
   background-clip: padding-box;
   border: 1px solid #ececec;
