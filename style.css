@@ -10,11 +10,12 @@ body {
   color: #222;
 }
 
-/* Apply drop shadow to all images */
-img {
-  /* Bottom only drop shadow */
-  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.5);
-}
+/*
+  Images inside the gallery items already receive a drop shadow from
+  their container. Applying an additional shadow to every <img> element
+  caused a doubled shadow effect on mobile. The global rule is removed
+  so only the container's shadow is used.
+*/
 
 header {
   position: fixed;
