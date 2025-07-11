@@ -147,6 +147,12 @@ h2 {
   opacity: 0;
   transform: translateY(-10px);
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  display: block;
+  font-style: italic;
+}
+
+.gallery-item .caption::first-line {
+  font-weight: bold;
 }
 
 .gallery-item:hover .caption {
