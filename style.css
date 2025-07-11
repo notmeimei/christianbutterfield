@@ -100,7 +100,7 @@ nav .dropdown-content {
   left: 0;
   background: #fafafa;
   border: 1px solid #ececec;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   padding: 0.3rem 0;
   min-width: 7rem;
   z-index: 1000;
