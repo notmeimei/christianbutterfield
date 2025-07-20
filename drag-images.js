@@ -23,7 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Layout once images have loaded
+  // Layout immediately after DOM is ready so items are positioned
+  layoutImages();
+
+  // Layout again once images have fully loaded or when resizing
   window.addEventListener('load', layoutImages);
   window.addEventListener('resize', layoutImages);
 
