@@ -318,3 +318,28 @@ footer {
   font-size: 0.9rem;
   padding: 2rem 0 1rem 0;
 }
+
+/* CV page layout */
+#cv {
+  padding-left: 0;
+}
+
+#cv h2,
+#cv h3,
+#cv p,
+#cv li {
+  font-family: 'Newsreader', serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+#cv ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 1rem 0;
+}
+
+#cv li {
+  margin-bottom: 0.4rem;
+}
