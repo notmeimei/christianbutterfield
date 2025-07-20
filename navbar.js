@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <button class="dropbtn">Contact</button>
         <div class="dropdown-content">
           <a href="https://www.instagram.com/cmilanb/?hl=en">Instagram</a>
-          <a href="mailto:your.email@example.com">Email</a>
-          <a href="index.html#gallery">Gallery</a>
+          <a href="mailto:christian.m.butterfield@gmail.com">Email</a>
+          <a href="https://www.corkingallery.com/artists/32-christian-butterfield/">Gallery</a>
         </div>
       </div>
     `;
