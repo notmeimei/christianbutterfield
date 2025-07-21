@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     header.innerHTML = `
       <div class="header-content">
         <div>
-          <h1><a href="index.html"><img src="images/CMB - Font Solvent.png" alt="Christian Milan Butterfield" class="logo"></a></h1>
+          <h1><a href="index.html"><img src="images/CMB Font Solvent.png" alt="Christian Milan Butterfield" class="logo"></a></h1>
         </div>
         <nav></nav>
       </div>
