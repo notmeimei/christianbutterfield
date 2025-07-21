@@ -321,7 +321,7 @@ footer {
 
 /* CV page layout */
 #cv {
-  padding-left: 0;
+  padding-left: 300;
 }
 
 #cv h2,
@@ -329,14 +329,14 @@ footer {
 #cv p,
 #cv li {
   font-family: 'Newsreader', serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 #cv ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 300;
   margin: 0 0 1rem 0;
 }
 
