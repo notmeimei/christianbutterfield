@@ -11,10 +11,9 @@ body {
 }
 
 /*
-  Images inside the gallery items already receive a drop shadow from
-  their container. Applying an additional shadow to every <img> element
-  caused a doubled shadow effect on mobile. The global rule is removed
-  so only the container's shadow is used.
+  Desktop layout uses a drop shadow on the gallery-item container.
+  On mobile the caption becomes part of that container, so the shadow
+  is moved to the <img> element to avoid a box around the caption.
 */
 
 header {
@@ -241,11 +240,18 @@ h2 {
     max-width: none;
     max-height: none;
     cursor: grab;
+    box-shadow: none;
+    border: none;
+    background: transparent;
   }
   .gallery-item img {
     width: 100% !important;
     height: auto !important;
     display: block;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ececec;
+    background: #eaeaea;
+    background-clip: padding-box;
   }
   .gallery-item .caption {
     position: static;
@@ -292,11 +298,18 @@ h2 {
     max-width: none;
     max-height: none;
     cursor: grab;
+    box-shadow: none;
+    border: none;
+    background: transparent;
   }
   .gallery-item img {
     width: 100% !important;
     height: auto !important;
     display: block;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ececec;
+    background: #eaeaea;
+    background-clip: padding-box;
   }
   .gallery-item .caption {
     position: static;
