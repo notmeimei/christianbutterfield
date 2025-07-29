@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('sofiapro-light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   margin: 0;
   padding: 0 200px;
   background: #fafafa;
@@ -40,9 +48,9 @@ header {
   text-align: left;
 }
 
-/* Title uses Newsreader */
+/* Title uses SofiaPro */
 header h1 {
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
   margin: 0;
@@ -67,12 +75,12 @@ header nav {
   margin-top: 0;
 }
 
-/* Tagline uses Newsreader italic serif */
+/* Tagline uses SofiaPro italic serif */
 .tagline {
   color: #888;
   font-size: 1rem;
   margin-top: 0.5rem;
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   font-style: italic;
 }
 
@@ -83,7 +91,7 @@ nav button {
   color: #222;
   padding: 0.3rem 0.6rem;
   margin: 0 0.5rem;
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   font-size: 1rem;
   line-height: 1;
   letter-spacing: 1px;
@@ -115,7 +123,7 @@ nav .dropdown-content a {
   padding: 0.3rem 0.6rem;
   color: #222;
   text-decoration: none;
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
 }
@@ -186,7 +194,7 @@ h2 {
   width: 100%;
   font-size: 0.8rem;
   line-height: 1;
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   color: #bbb;
   text-align: left;
   background: transparent;
@@ -352,7 +360,7 @@ footer {
 #cv h3,
 #cv p,
 #cv li {
-  font-family: 'Newsreader', serif;
+  font-family: 'SofiaPro', sans-serif;
   font-size: 0.8rem;
   font-weight: normal;
   line-height: 1.4;
