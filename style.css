@@ -354,7 +354,7 @@ footer {
 
 /* CV page layout */
 #cv {
-  padding-left: 300px;
+  padding-left: 100px;
 }
 
 #cv h2,
@@ -369,7 +369,7 @@ footer {
 
 #cv ul {
   list-style-type: none;
-  padding-left: 300px;
+  padding-left: 100px;
   margin: 0 0 1rem 0;
 }
 
