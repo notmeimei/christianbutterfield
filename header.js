@@ -18,7 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (nav) {
       nav.innerHTML = `
         <button onclick="window.location.href='cv.html'">CV</button>
-        <button onclick="window.location.href='exhibitions.html'">Exhibitions</button>
+        <div class="dropdown">
+          <button class="dropbtn">Exhibitions</button>
+          <div class="dropdown-content">
+            <a href="apricity-2024.html">2024 - Apricity</a>
+            <a href="green-light-2022.html">2022 - Green Light</a>
+          </div>
+        </div>
         <div class="dropdown">
           <button class="dropbtn">Contact</button>
           <div class="dropdown-content">
