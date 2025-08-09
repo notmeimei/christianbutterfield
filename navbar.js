@@ -3,17 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
   if (nav) {
     nav.innerHTML = `
       <button onclick="window.location.href='cv.html'">CV</button>
-      <button onclick="window.location.href='exhibitions.html'">Exhibitions</button>
-      <div class="dropdown">
-        <button class="dropbtn">Contact</button>
-        <div class="dropdown-content">
-          <a href="https://www.instagram.com/cmilanb/?hl=en" target="_blank">Instagram</a>
-          <a href="mailto:christian.m.butterfield@gmail.com" target="_blank">Email</a>
-          <a href="https://www.corkingallery.com/artists/32-christian-butterfield/" target="_blank">Gallery</a>
+        <div class="dropdown">
+          <button class="dropbtn">Exhibitions</button>
+          <div class="dropdown-content">
+            <a href="apricity-2024.html">2024 - Apricity</a>
+            <a href="green-light-2022.html">2022 - Green Light</a>
+          </div>
         </div>
-      </div>
-    `;
-  }
+      <div class="dropdown">
+          <button class="dropbtn">Contact</button>
+          <div class="dropdown-content">
+            <a href="https://www.instagram.com/cmilanb/?hl=en" target="_blank">Instagram</a>
+            <a href="mailto:christian.m.butterfield@gmail.com" target="_blank">Email</a>
+            <a href="https://www.corkingallery.com/artists/32-christian-butterfield/" target="_blank">Gallery</a>
+          </div>
+        </div>
+      `;
+    }
   
   const headerTitle = document.querySelector('header h1');
   if (headerTitle && headerTitle.textContent.trim()) {
