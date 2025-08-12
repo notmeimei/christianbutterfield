@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll) {
-        logoContainer.classList.add('hidden');
+        logoContainer.classList.add('blurred');
       } else {
-        logoContainer.classList.remove('hidden');
+        logoContainer.classList.remove('blurred');
       }
       lastScroll = currentScroll;
     });
