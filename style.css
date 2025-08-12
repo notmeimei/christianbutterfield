@@ -35,23 +35,20 @@ header {
   padding: 0 200px;
   width: 100%;
   pointer-events: auto;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+ transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-header.hidden {
-  transform: translateY(calc(-100% - 55px));
+
+.logo-container {
+  transition: transform 0.3s ease, opacity 0.3s ease, max-width 0.3s ease;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.logo-container.hidden {
+  transform: translateY(-100%);
   opacity: 0;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem 1rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: left;
+  max-width: 0;
 }
 
 /* Title uses SofiaPro */
