@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="dropdown">
           <button class="dropbtn">Exhibitions</button>
           <div class="dropdown-content">
-            <a href="apricity-2024.html">2024 - Apricity</a>
-            <a href="green-light-2022.html">2022 - Green Light</a>
+            <a href="apricity-2024.html">Apricity - 2024</a>
+            <a href="green-light-2021.html">Green Light - 2021</a>
           </div>
         </div>
         <div class="dropdown">
