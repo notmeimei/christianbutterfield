@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (header) {
     header.innerHTML = `
       <div class="header-content">
-        <div>
+        <div class="logo-container">
           <h1><a href="index.html"><img src="images/CMB Font Solvent.png" alt="Christian Milan Butterfield" class="logo"></a></h1>
         </div>
         <nav></nav>
@@ -35,13 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
       `;
     }
+    const logoContainer = header.querySelector('.logo-container');
     let lastScroll = window.scrollY;
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll) {
-        header.classList.add('hidden');
+        logoContainer.classList.add('hidden');
       } else {
-        header.classList.remove('hidden');
+        logoContainer.classList.remove('hidden');
       }
       lastScroll = currentScroll;
     });
