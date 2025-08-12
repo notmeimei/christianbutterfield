@@ -35,6 +35,12 @@ header {
   padding: 0 200px;
   width: 100%;
   pointer-events: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header.hidden {
+  transform: translateY(calc(-100% - 55px));
+  opacity: 0;
 }
 
 .header-content {
