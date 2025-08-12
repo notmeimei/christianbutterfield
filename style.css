@@ -40,16 +40,14 @@ header {
 
 
 .logo-container {
-  transition: transform 0.3s ease, opacity 0.3s ease, max-width 0.3s ease;
-  max-width: 600px;
-  overflow: hidden;
-}
+   transition: filter 0.3s ease;
+   max-width: 600px;
+   overflow: hidden;
+ }
 
-.logo-container.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-  max-width: 0;
-}
+ .logo-container.blurred {
+   filter: blur(5px);
+ }
 
 .header-content {
   display: flex;
