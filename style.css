@@ -40,13 +40,14 @@ header {
 
 
 .logo-container {
-   transition: filter 0.3s ease;
+   transition: filter 0.3s ease, opacity 0.3s ease;
    max-width: 600px;
    overflow: hidden;
  }
 
  .logo-container.blurred {
-   filter: blur(5px);
+   filter: blur(10px);
+   opacity: 0.4;
  }
 
 .header-content {
