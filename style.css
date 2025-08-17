@@ -206,14 +206,25 @@ h3 {
   padding: 0;
 }
 
-/* Exhibition pages use a simple two-column grid */
+/* Exhibition pages layout */
+.exhibition-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.exhibition-text {
+  max-width: 400px;
+}
+
+/* Exhibition pages use a single-column image gallery */
 .exhibition-gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
   justify-content: start;
 }
 
@@ -323,6 +334,14 @@ h3 {
   .freeform-gallery {
     min-height: 15000px;
   }
+  .exhibition-layout {
+    flex-direction: column;
+  }
+  .exhibition-text {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 100%;
+  }
   .exhibition-gallery {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -396,6 +415,14 @@ h3 {
   .freeform-gallery {
     min-height: 4600px;
     padding: 2rem 0;
+  }
+  .exhibition-layout {
+    flex-direction: column;
+  }
+  .exhibition-text {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 100%;
   }
   .exhibition-gallery {
     grid-template-columns: 1fr;
