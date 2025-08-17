@@ -1,6 +1,23 @@
 @font-face {
-  font-family: 'SofiaPro';
-  src: url('sofiapro-light.woff2') format('woff2');
+  font-family: 'Founders Grotesk';
+  src: url('FoundersGrotesk-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('FoundersGrotesk-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('FoundersGrotesk-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
