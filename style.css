@@ -247,8 +247,13 @@ h2 {
   header h1 {
     font-size: 1.5rem;
   }
+  .logo-container {
+    width: 100%;
+    max-width: none;
+  }
   header .logo {
-    max-width: 200px;
+    width: 100%;
+    max-width: none;
   }
   .header-content {
     flex-direction: column;
@@ -307,8 +312,13 @@ h2 {
   header h1 {
     font-size: 1.2rem;
   }
+  .logo-container {
+    width: 100%;
+    max-width: none;
+  }
   header .logo {
-    max-width: 150px;
+    width: 100%;
+    max-width: none;
   }
   .header-content {
     flex-direction: column;
