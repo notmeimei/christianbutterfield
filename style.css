@@ -215,6 +215,8 @@ h3 {
 
 .exhibition-text {
   max-width: 400px;
+  position: sticky;
+  top: 20px;
 }
 
 /* Exhibition pages use a single-column image gallery */
@@ -341,6 +343,8 @@ h3 {
     margin-left: 0;
     margin-top: 20px;
     max-width: 100%;
+    position: static;
+    top: auto;
   }
   .exhibition-gallery {
     grid-template-columns: 1fr;
@@ -423,6 +427,8 @@ h3 {
     margin-left: 0;
     margin-top: 20px;
     max-width: 100%;
+    position: static;
+    top: auto;
   }
   .exhibition-gallery {
     grid-template-columns: 1fr;
