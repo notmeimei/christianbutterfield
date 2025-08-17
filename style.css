@@ -46,8 +46,8 @@ header {
  }
 
  .logo-container.blurred {
-   filter: blur(10px);
-   opacity: 0.2;
+   filter: blur(4px);
+   opacity: 0.9;
  }
 
 .header-content {
@@ -90,8 +90,8 @@ header nav {
 }
 
 header nav.blurred {
-  filter: blur(10px);
-  opacity: 0.2;
+  filter: blur(4px);
+  opacity: 0.9;
 }
 
 /* Tagline uses SofiaPro italic serif */
@@ -150,7 +150,7 @@ nav .dropdown-content a {
 }
 
 nav .dropdown-content a:hover {
-  color: #777777;
+  color: #e3e3e3;
 }
 
 nav .dropdown:hover .dropdown-content {
