@@ -30,7 +30,7 @@
 body {
   font-family: 'Founders Grotesk', sans-serif;
   margin: 0;
-  padding: 0 80px;
+  padding: 0 200px;
   background: #fafafa;
   color: #222;
   cursor: url('images/Cursor-Apology-Flower.png') 0 0, auto;
@@ -71,11 +71,11 @@ header {
 .header-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem 1rem 1rem 1rem;
-  width: 100%;
-  margin: 0;
+  max-width: 1400px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -102,6 +102,7 @@ header .logo {
 header nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
   margin-top: 0;
   transition: filter 0.5s ease, opacity 0.5s ease;
 }
