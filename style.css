@@ -215,8 +215,9 @@ h3 {
 
 .exhibition-text {
   max-width: 400px;
-  position: sticky;
-  top: 20px;
+  position: fixed;
+  top: 120px;
+  right: 200px;
 }
 
 /* Exhibition pages use a single-column image gallery */
@@ -228,6 +229,7 @@ h3 {
   max-width: 1000px;
   margin: 0;
   justify-content: start;
+  margin-right: calc(400px + 40px);
 }
 
 .exhibition-gallery .gallery-item {
@@ -345,11 +347,13 @@ h3 {
     max-width: 100%;
     position: static;
     top: auto;
+    right: auto;
   }
   .exhibition-gallery {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
+    margin-right: 0;
   }
   .gallery-item {
     position: static !important;
@@ -429,11 +433,13 @@ h3 {
     max-width: 100%;
     position: static;
     top: auto;
+    right: auto;
   }
   .exhibition-gallery {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
+    margin-right: 0;
   }
   .gallery-item {
     position: static !important;
