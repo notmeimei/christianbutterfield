@@ -252,6 +252,7 @@ h3 {
 @media (max-width: 900px) {
   body {
     padding: 0 1rem;
+    top: 20px;
   }
   header {
     padding: 0 1rem;
@@ -310,13 +311,14 @@ h3 {
     color: #777;
   }
   main {
-    padding: 160px 1rem 0 1rem;
+    padding: 125px 1rem 0 1rem;
   }
 }
 
 @media (max-width: 600px) {
     body {
     padding: 0 0.5rem;
+      top: 20px;
   }
   header {
     padding: 0 0.5rem;
@@ -376,7 +378,7 @@ h3 {
     color: #777;
   }
   main {
-    padding: 130px 0.5rem 0 0.5rem;
+    padding: 95px 0.5rem 0 0.5rem;
   }
 }
 
