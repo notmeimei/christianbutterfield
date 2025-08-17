@@ -2,6 +2,7 @@
   font-family: 'Founders Grotesk';
   src: url('FoundersGrotesk-Medium.woff2') format('woff2');
   font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -18,7 +19,6 @@
   font-family: 'Founders Grotesk';
   src: url('FoundersGrotesk-Bold.woff2') format('woff2');
   font-weight: 700;
-  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
