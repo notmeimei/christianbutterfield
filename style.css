@@ -116,7 +116,7 @@ nav button {
   font-weight: bold;
   line-height: 1;
   letter-spacing: 1px;
-  cursor: pointer;
+  cursor: url('images/Cursor-Apology-Flower.png') 0 0, pointer;
   transition: color 0.15s;
 }
 nav button:hover {
