@@ -3,6 +3,15 @@
 // element found on the page.
 
 document.addEventListener('DOMContentLoaded', function () {
+      const existingFavicon = document.querySelector("link[rel='icon']");
+    if (!existingFavicon) {
+      const favicon = document.createElement('link');
+      favicon.rel = 'icon';
+      favicon.type = 'image/png';
+      favicon.href = 'images/Website-Eye-Favicon.png';
+      document.head.appendChild(favicon);
+    }
+
   const header = document.querySelector('header');
   if (header) {
     header.innerHTML = `
