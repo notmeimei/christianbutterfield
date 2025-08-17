@@ -50,10 +50,24 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll) {
         logoContainer.classList.add('blurred');
+        if (window.innerWidth <= 600 && nav) {
+          nav.classList.add('blurred');
+        } else if (nav) {
+          nav.classList.remove('blurred');
+        }
       } else {
         logoContainer.classList.remove('blurred');
+        if (nav) {
+          nav.classList.remove('blurred');
+        }
       }
       lastScroll = currentScroll;
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 600 && nav) {
+        nav.classList.remove('blurred');
+      }
     });
   }
 });
