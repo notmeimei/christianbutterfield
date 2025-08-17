@@ -28,7 +28,7 @@
 }
 
 body {
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   margin: 0;
   padding: 0 200px;
   background: #fafafa;
@@ -79,9 +79,9 @@ header {
   text-align: left;
 }
 
-/* Title uses SofiaPro */
+/* Title uses Founders Grotesk */
 header h1 {
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
   margin: 0;
@@ -112,12 +112,12 @@ header nav.blurred {
   opacity: 0.9;
 }
 
-/* Tagline uses SofiaPro italic serif */
+/* Tagline uses Founders Grotesk italic */
 .tagline {
   color: #888;
   font-size: 1rem;
   margin-top: 0.5rem;
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   font-style: italic;
 }
 
@@ -128,7 +128,7 @@ nav button {
   color: #222;
   padding: 0.3rem 0.6rem;
   margin: 0 0.5rem;
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1;
@@ -161,7 +161,7 @@ nav .dropdown-content a {
   padding: 0.3rem 0.6rem;
   color: #222;
   text-decoration: none;
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -262,7 +262,7 @@ h3 {
   width: 100%;
   font-size: 0.8rem;
   line-height: 1;
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   color: #bbb;
   text-align: left;
   background: transparent;
@@ -438,16 +438,16 @@ footer {
 #cv p,
 #cv li,
 #cv a {
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: semi-bold;
   line-height: 1.4;
 }
 
 #cv h3 {
-  font-family: 'SofiaPro', sans-serif;
+  font-family: 'Founders Grotesk', sans-serif;
   font-size: 1rem;
-  font-weight: 1000;
+  font-weight: bold;
   line-height: 1.4;
 }
 
