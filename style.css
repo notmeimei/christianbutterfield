@@ -175,6 +175,10 @@ h2 {
   margin-bottom: 1.2rem;
 }
 
+h3 {
+  font-weight: 100;
+}
+
 /* Freeform Gallery Styling */
 .freeform-gallery {
   position: relative;
@@ -389,13 +393,19 @@ footer {
 }
 
 #cv h2,
-#cv h3,
 #cv p,
 #cv li,
 #cv a {
   font-family: 'SofiaPro', sans-serif;
   font-size: 1rem;
   font-weight: bold;
+  line-height: 1.4;
+}
+
+#cv h3 {
+  font-family: 'SofiaPro', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
   line-height: 1.4;
 }
 
