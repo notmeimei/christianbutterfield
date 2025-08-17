@@ -279,7 +279,7 @@ h3 {
   font-size: 0.8rem;
   line-height: 1;
   font-family: 'Founders Grotesk', sans-serif;
-  color: #bbb;
+  color: #cccccc;
   text-align: left;
   background: transparent;
   pointer-events: none;
@@ -298,7 +298,7 @@ h3 {
   opacity: 1;
   transform: translateY(0);
   text-align: left;
-  color: #777777;
+  color: #cccccc;
 }
 
 .gallery-item:active {
@@ -467,7 +467,7 @@ h3 {
     opacity: 1;
     transform: none;
     pointer-events: auto;
-    color: #777;
+    color: #cccccc;
   }
   main {
     padding: 130px 0.5rem 0 0.5rem;
