@@ -125,7 +125,7 @@ nav .dropdown-content {
   top: 100%;
   left: 0;
   background: #fafafa;
-  border: 1px solid #ececec;
+  border: 0px solid #ececec;
   box-shadow: none;
   padding: 0.3rem 0;
   min-width: 7rem;
@@ -139,6 +139,7 @@ nav .dropdown-content a {
   text-decoration: none;
   font-family: 'SofiaPro', sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
