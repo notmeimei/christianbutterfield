@@ -210,13 +210,14 @@ h3 {
 .exhibition-gallery {
   display: grid;
   grid-template-columns: repeat(2, 800px);
-  gap: 1px;
+  gap: 20px;
+  padding: 20px;
   justify-content: start;
 }
 
 .exhibition-gallery .gallery-item {
   position: static;
-  margin: 1px;
+  margin: 0;
   background: none;
   box-shadow: none;
   cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
@@ -320,6 +321,11 @@ h3 {
   .freeform-gallery {
     min-height: 15000px;
   }
+  .exhibition-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
   .gallery-item {
     position: static !important;
     display: block;
@@ -332,6 +338,9 @@ h3 {
     box-shadow: none;
     border: none;
     background: transparent;
+  }
+  .exhibition-gallery .gallery-item {
+    margin: 2rem 0;
   }
   .gallery-item img {
     width: 100% !important;
@@ -386,6 +395,11 @@ h3 {
     min-height: 4600px;
     padding: 2rem 0;
   }
+  .exhibition-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
   .gallery-item {
     position: static !important;
     display: block;
@@ -398,6 +412,9 @@ h3 {
     box-shadow: none;
     border: none;
     background: transparent;
+  }
+  .exhibition-gallery .gallery-item {
+    margin: 2rem 0;
   }
   .gallery-item img {
     width: 100% !important;
