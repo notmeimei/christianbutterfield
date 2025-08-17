@@ -406,3 +406,10 @@ footer {
 #cv a:visited {
   color: #222;
 }
+
+@media (max-width: 600px) {
+  #cv,
+  #cv ul {
+    padding-left: 0;
+  }
+}
