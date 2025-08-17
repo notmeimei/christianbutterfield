@@ -202,7 +202,7 @@ h3 {
   margin: 0;
   background: none;
   box-shadow: none;
-  cursor: default;
+  cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
 }
 
 .exhibition-gallery .gallery-item img {
@@ -223,7 +223,7 @@ h3 {
   transition: box-shadow 0.2s;
   background-clip: padding-box;
   border: none;
-  cursor: grab;
+  cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
   user-select: none;
 }
 
@@ -269,7 +269,7 @@ h3 {
 }
 
 .gallery-item:active {
-  cursor: grabbing;
+  cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
 }
 
 
@@ -311,7 +311,7 @@ h3 {
     height: auto !important;
     max-width: none;
     max-height: none;
-    cursor: grab;
+    cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
     box-shadow: none;
     border: none;
     background: transparent;
@@ -377,7 +377,7 @@ h3 {
     height: auto !important;
     max-width: none;
     max-height: none;
-    cursor: grab;
+    cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
     box-shadow: none;
     border: none;
     background: transparent;
