@@ -209,9 +209,11 @@ h3 {
 /* Exhibition pages use a simple two-column grid */
 .exhibition-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 800px);
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   justify-content: start;
 }
 
@@ -224,9 +226,9 @@ h3 {
 }
 
 .exhibition-gallery .gallery-item img {
-  width: 800px !important;
+  width: 100% !important;
   height: auto;
-  display: grid;
+  display: block;
   box-shadow: none;
   background: none;
 }
