@@ -193,13 +193,13 @@ h3 {
 .exhibition-gallery {
   display: grid;
   grid-template-columns: repeat(2, 800px);
-  gap: 0;
+  gap: 1px;
   justify-content: start;
 }
 
 .exhibition-gallery .gallery-item {
   position: static;
-  margin: 0;
+  margin: 1px;
   background: none;
   box-shadow: none;
   cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
@@ -208,7 +208,7 @@ h3 {
 .exhibition-gallery .gallery-item img {
   width: 800px !important;
   height: auto;
-  display: block;
+  display: grid;
   box-shadow: none;
   background: none;
 }
