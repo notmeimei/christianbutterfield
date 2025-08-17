@@ -400,3 +400,8 @@ footer {
 #cv li {
   margin-bottom: 0.4rem;
 }
+
+#cv a,
+#cv a:visited {
+  color: #222;
+}
