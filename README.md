@@ -11,7 +11,7 @@
   <header>
     <div class="header-content">
       <div>
-        <h1>christian milan butterfield</h1>
+        <h1>Christian Butterfield</h1>
         <p class="tagline">Minimal Artist Portfolio</p>
       </div>
       <nav>
@@ -76,7 +76,7 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 Christian Milan Butterfield</p>
+    <p>&copy; 2025 Christian Butterfield</p>
   </footer>
   <script src="drag-images.js"></script>
 </body>
