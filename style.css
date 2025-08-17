@@ -130,11 +130,11 @@ nav .dropdown-content {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fafafa;
+  background: transparent;
   border: 0px solid #ececec;
   box-shadow: none;
   padding: 0.3rem 0;
-  min-width: 7rem;
+  width: max-content;
   z-index: 1000;
 }
 
@@ -147,6 +147,7 @@ nav .dropdown-content a {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 nav .dropdown-content a:hover {
