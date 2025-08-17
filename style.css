@@ -46,7 +46,7 @@ header {
  }
 
  .logo-container.blurred {
-   filter: blur(4px);
+   filter: blur(2px);
    opacity: 0.9;
  }
 
@@ -90,7 +90,7 @@ header nav {
 }
 
 header nav.blurred {
-  filter: blur(4px);
+  filter: blur(2px);
   opacity: 0.9;
 }
 
