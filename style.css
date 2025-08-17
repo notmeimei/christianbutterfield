@@ -197,7 +197,7 @@ h3 {
   box-shadow: 0 35px 35px -10px rgba(0, 0, 0, 0.35);
   transition: box-shadow 0.2s;
   background-clip: padding-box;
-  border: 1px solid #ececec;
+  border: none;
   cursor: grab;
   user-select: none;
 }
@@ -297,7 +297,7 @@ h3 {
     height: auto !important;
     display: block;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
-    border: 1px solid #ececec;
+    border: none;
     background: #eaeaea;
     background-clip: padding-box;
   }
@@ -364,7 +364,7 @@ h3 {
     height: auto !important;
     display: block;
     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
-    border: 1px solid #ececec;
+    border: none;
     background: #eaeaea;
     background-clip: padding-box;
   }
