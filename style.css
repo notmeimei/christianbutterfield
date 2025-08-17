@@ -189,6 +189,30 @@ h3 {
   padding: 0;
 }
 
+/* Exhibition pages use a simple two-column grid */
+.exhibition-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 800px);
+  gap: 0;
+  justify-content: start;
+}
+
+.exhibition-gallery .gallery-item {
+  position: static;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+.exhibition-gallery .gallery-item img {
+  width: 800px !important;
+  height: auto;
+  display: block;
+  box-shadow: none;
+  background: none;
+}
+
 .gallery-item {
   position: absolute;
   background: #eaeaea;
