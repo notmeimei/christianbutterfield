@@ -349,50 +349,50 @@ h3 {
     top: auto;
     right: auto;
   }
-  .exhibition-gallery {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    margin-right: 0;
+      .exhibition-gallery {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 20px;
+      margin-right: 0;
+    }
+    .gallery-item {
+      position: static !important;
+      display: block;
+      margin: 1rem 0;
+      width: 100% !important;
+      height: auto !important;
+      max-width: none;
+      max-height: none;
+      cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+    .exhibition-gallery .gallery-item {
+      margin: 1rem 0;
+    }
+    .gallery-item img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+      box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
+      border: none;
+      background: #eaeaea;
+      background-clip: padding-box;
+    }
+    .gallery-item .caption {
+      position: static;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
+      color: #777;
+    }
+    main {
+      padding: 160px 1rem 0 1rem;
+    }
   }
-  .gallery-item {
-    position: static !important;
-    display: block;
-    margin: 2rem 0;
-    width: 100% !important;
-    height: auto !important;
-    max-width: none;
-    max-height: none;
-    cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-  }
-  .exhibition-gallery .gallery-item {
-    margin: 2rem 0;
-  }
-  .gallery-item img {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
-    border: none;
-    background: #eaeaea;
-    background-clip: padding-box;
-  }
-  .gallery-item .caption {
-    position: static;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-    color: #777;
-  }
-  main {
-    padding: 160px 1rem 0 1rem;
-  }
-}
 
 @media (max-width: 600px) {
     body {
@@ -435,50 +435,50 @@ h3 {
     top: auto;
     right: auto;
   }
-  .exhibition-gallery {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    margin-right: 0;
+    .exhibition-gallery {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 20px;
+      margin-right: 0;
+    }
+    .gallery-item {
+      position: static !important;
+      display: block;
+      margin: 1rem 0;
+      width: 100% !important;
+      height: auto !important;
+      max-width: none;
+      max-height: none;
+      cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+    .exhibition-gallery .gallery-item {
+      margin: 1rem 0;
+    }
+    .gallery-item img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+      box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
+      border: none;
+      background: #eaeaea;
+      background-clip: padding-box;
+    }
+    .gallery-item .caption {
+      position: static;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
+      color: #7f7f7f;
+    }
+    main {
+      padding: 130px 0.5rem 0 0.5rem;
+    }
   }
-  .gallery-item {
-    position: static !important;
-    display: block;
-    margin: 2rem 0;
-    width: 100% !important;
-    height: auto !important;
-    max-width: none;
-    max-height: none;
-    cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-  }
-  .exhibition-gallery .gallery-item {
-    margin: 2rem 0;
-  }
-  .gallery-item img {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.15);
-    border: none;
-    background: #eaeaea;
-    background-clip: padding-box;
-  }
-  .gallery-item .caption {
-    position: static;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-    color: #7f7f7f;
-  }
-  main {
-    padding: 130px 0.5rem 0 0.5rem;
-  }
-}
 
 footer {
   text-align: center;
