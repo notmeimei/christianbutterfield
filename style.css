@@ -27,13 +27,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cursor-url: url('images/Cursor-Apology-Flower.png') 0 0;
+}
+
 body {
   font-family: 'Founders Grotesk', sans-serif;
   margin: 0;
   padding: 0 200px;
   background: #fafafa;
   color: #222;
-  cursor: url('images/Cursor-Apology-Flower.png') 0 0, auto;
+  cursor: var('images/Cursor-Apology-Flower.png'), auto;
 }
 
 /*
@@ -133,7 +137,7 @@ nav button {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1px;
-  cursor: url('images/Cursor-Apology-Flower.png') 0 0, pointer;
+  cursor: var('images/Cursor-Apology-Flower.png'), pointer;
   transition: color 0.15s;
 }
 nav button:not(.dropbtn):hover {
@@ -237,7 +241,7 @@ h3 {
   margin: 0;
   background: none;
   box-shadow: none;
-  cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+  cursor: var('images/Cursor-Apology-Flower.png'), grab;
 }
 
 .exhibition-gallery .gallery-item img {
@@ -258,7 +262,7 @@ h3 {
   transition: box-shadow 0.2s;
   background-clip: padding-box;
   border: none;
-  cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+  cursor: var('images/Cursor-Apology-Flower.png'), grab;
   user-select: none;
 }
 
@@ -304,7 +308,7 @@ h3 {
 }
 
 .gallery-item:active {
-  cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+  cursor: var('images/Cursor-Apology-Flower.png'), grab;
 }
 
 
@@ -363,7 +367,7 @@ h3 {
       height: auto !important;
       max-width: none;
       max-height: none;
-      cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+      cursor: var('images/Cursor-Apology-Flower.png'), grab;
       box-shadow: none;
       border: none;
       background: transparent;
@@ -449,7 +453,7 @@ h3 {
       height: auto !important;
       max-width: none;
       max-height: none;
-      cursor: url('images/Cursor-Apology-Flower.png') 0 0, grab;
+      cursor: var('images/Cursor-Apology-Flower.png'), grab;
       box-shadow: none;
       border: none;
       background: transparent;
