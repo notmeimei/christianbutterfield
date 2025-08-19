@@ -45,21 +45,25 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
     }
     const logoContainer = header.querySelector('.logo-container');
+        const scrollThreshold = 100;
     let lastScroll = window.scrollY;
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll) {
-        logoContainer.classList.add('blurred');
-        if (window.innerWidth <= 600 && nav) {
-          nav.classList.add('blurred');
-        } else if (nav) {
-          nav.classList.remove('blurred');
+       if (currentScroll - downStart > scrollThreshold) {
+          logoContainer.classList.add('blurred');
+          if (window.innerWidth <= 600 && nav) {
+            nav.classList.add('blurred');
+          } else if (nav) {
+            nav.classList.remove('blurred');
+          }
         }
       } else {
         logoContainer.classList.remove('blurred');
         if (nav) {
           nav.classList.remove('blurred');
         }
+            downStart = currentScroll;
       }
       lastScroll = currentScroll;
     });
