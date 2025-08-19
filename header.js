@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
     }
     const logoContainer = header.querySelector('.logo-container');
-        const scrollThreshold = 100;
+        const scrollThreshold = 50;
     let lastScroll = window.scrollY;
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll) {
-       if (currentScroll - downStart > scrollThreshold) {
+      if (currentScroll - downStart > scrollThreshold) {
           logoContainer.classList.add('blurred');
           if (window.innerWidth <= 600 && nav) {
             nav.classList.add('blurred');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nav.classList.remove('blurred');
           }
         }
-      } else {
+      } else if (currentScroll < lastScroll) {
         logoContainer.classList.remove('blurred');
         if (nav) {
           nav.classList.remove('blurred');
