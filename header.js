@@ -45,8 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
     }
     const logoContainer = header.querySelector('.logo-container');
-        const scrollThreshold = 100;
+    const scrollThreshold = 100;
     let lastScroll = window.scrollY;
+    let downStart = lastScroll;
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > lastScroll) {
