@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   galleryImages.forEach(img => {
     img.addEventListener('click', () => {
+      const parentItem = img.closest('.gallery-item');
+      if (parentItem?.dataset.dragging === 'true') return;
       lightboxImg.src = img.src;
       lightbox.classList.remove('hidden');
     });
