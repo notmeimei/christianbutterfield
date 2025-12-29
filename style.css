@@ -27,17 +27,12 @@
   box-sizing: border-box;
 }
 
-:root {
-  --cursor-url: url('images/Cursor-Apology-Flower.png') 0 0;
-}
-
 body {
   font-family: 'Founders Grotesk', sans-serif;
   margin: 0;
   padding: 0 200px;
   background: #fafafa;
   color: #222;
-  cursor: var(--cursor-url), auto;
 }
 
 /*
@@ -137,7 +132,7 @@ nav button {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1px;
-  cursor: var(--cursor-url), pointer;
+  cursor: pointer;
   transition: color 0.15s;
 }
 nav button:not(.dropbtn):hover {
@@ -241,7 +236,7 @@ h3 {
   margin: 0;
   background: none;
   box-shadow: none;
-  cursor: var(--cursor-url), grab;
+  cursor: grab;
 }
 
 .exhibition-gallery .gallery-item img {
@@ -262,7 +257,7 @@ h3 {
   transition: box-shadow 0.2s;
   background-clip: padding-box;
   border: none;
-  cursor: var(--cursor-url), grab;
+  cursor: grab;
   user-select: none;
 }
 
@@ -308,7 +303,7 @@ h3 {
 }
 
 .gallery-item:active {
-  cursor: var(--cursor-url), grab;
+  cursor: grab;
 }
 
 
@@ -367,7 +362,7 @@ h3 {
       height: auto !important;
       max-width: none;
       max-height: none;
-      cursor: var(--cursor-url), grab;
+      cursor: grab;
       box-shadow: none;
       border: none;
       background: transparent;
@@ -453,7 +448,7 @@ h3 {
       height: auto !important;
       max-width: none;
       max-height: none;
-      cursor: var(--cursor-url), grab;
+      cursor: grab;
       box-shadow: none;
       border: none;
       background: transparent;
