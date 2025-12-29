@@ -31,12 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', layoutImages);
 
   items.forEach(item => {
-    let offsetX = 0, offsetY = 0, startX = 0, startY = 0, dragging = false;
+    let offsetX = 0, offsetY = 0, startX = 0, startY = 0, dragging = false, movedDuringDrag = false;
 
     item.addEventListener('mousedown', function (e) {
       // Only allow drag if not on mobile layout
       if (window.innerWidth <= 900) return;
       dragging = true;
+      movedDuringDrag = false;
       item.style.zIndex = 999;
       startX = e.clientX;
       startY = e.clientY;
@@ -47,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       function onMouseMove(e) {
         if (!dragging) return;
+        if (!movedDuringDrag) {
+          movedDuringDrag = true;
+          item.dataset.dragging = 'true';
+        }
         item.style.left = (e.clientX - offsetX) + 'px';
         item.style.top = (e.clientY - offsetY) + 'px';
       }
@@ -54,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
       function onMouseUp() {
         dragging = false;
         item.style.zIndex = '';
+        if (movedDuringDrag) {
+          // Keep the dragging flag through the click event triggered after mouseup
+          requestAnimationFrame(() => {
+            delete item.dataset.dragging;
+          });
+        }
         document.removeEventListener('mousemove', onMouseMove);
         document.removeEventListener('mouseup', onMouseUp);
       }
