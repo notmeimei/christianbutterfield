@@ -35,6 +35,12 @@ body {
   color: #222;
 }
 
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 /*
   Desktop layout uses a drop shadow on the gallery-item container.
   On mobile the caption becomes part of that container, so the shadow
