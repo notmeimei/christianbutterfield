@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <button class="dropbtn">Contact</button>
           <div class="dropdown-content">
             <a href="https://www.instagram.com/cmilanb/?hl=en" target="_blank">Instagram</a>
-            <a href="mailto:christian.m.butterfield@gmail.com" target="_blank">Email</a>
+            <a href="mailto:christianbutterfieldstudio@gmail.com" target="_blank">Email</a>
             <a href="https://www.corkingallery.com/artists/32-christian-butterfield/" target="_blank">Gallery</a>
           </div>
         </div>
